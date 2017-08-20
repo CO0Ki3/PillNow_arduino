@@ -15,7 +15,8 @@ void loop()
   int cdsValue = analogRead(cds);
   Serial.print("cds = ");
   Serial.println(cdsValue);
-  if(cdsValue <= 300) {
+  if(cdsValue <= 350) {
     BTSerial.println("O");
   }
+  delay(1000);
 }
